@@ -33,12 +33,15 @@ Use ssh -i labsuser.pem ec2-user@<EC2_IP> to access the instances.
 Installing Oracle JDK 19.0.1 on AWS Linux AMI:
 i)Download Oracle JDK
 wget https://download.oracle.com/java/19/archive/jdk-19.0.1_linux-x64_bin.tar.gz
+
 ii)Extract the files:
 After downloading the JDK, extract it using the tar command:
 tar -xvf jdk-19.0.1_linux-x64_bin.tar.gz
+
 iii) Move the extracted JDK:
 You can move the extracted JDK to a suitable location on your system. For example, you can move it to /usr/local:
 sudo mv jdk-19.0.1 /usr/local/
+
 iv) Update Environment Variables:
 To set up environment variables, you need to create a new file for Oracle JDK in /etc/profile.d/.
 sudo touch /etc/profile.d/oraclejdk.sh
@@ -49,30 +52,32 @@ Add the following lines to /etc/profile.d/oraclejdk.sh:
 export JAVA_HOME=/usr/local/jdk-19.0.1
 export PATH=$JAVA_HOME/bin:$PATH
 Save the file and exit the text editor (in Vim, you can save with :wq
+
 v) Reload shell configuration:
 To apply the environment variables, either logout and log back in or run:
 source /etc/profile.d/oraclejdk.sh
+
 vi) Check Java version:
 Finally, you can check the installed Java version:
 java -version
 This should display the version of the Oracle JDK you installed.
 
 
-6. AWS SQS Configuration
+7. AWS SQS Configuration
 Navigate to Amazon SQS and create a queue (e.g., Car.fifo).
 Configure encryption, access policy, and assign it to the LabRole.
-7. Java App for Image Recognition
+8. Java App for Image Recognition
 Fetch images from the S3 bucket.
 Use AWS Rekognition to find image labels and confidence scores.
 Send the names of images with a "Car" label and confidence score > 90% to the AWS SQS message queue.
 Send a "-1" message at the end.
-8. Prepare the JAR file for deployment.
-9. Java App for Text Detection
+9. Prepare the JAR file for deployment.
+10. Java App for Text Detection
 Fetch messages from the AWS SQS queue.
 Use AWS Rekognition for text detection.
 Write images with detected text to ImageText.txt.
-10. Prepare the JAR file for deployment.
-11. Java Application Deployment on EC2 Instances
+11. Prepare the JAR file for deployment.
+12. Java Application Deployment on EC2 Instances
 SSH to the EC2 instances.
 Configure AWS using aws configure.
 Install openjdk-java-19.0.1.
