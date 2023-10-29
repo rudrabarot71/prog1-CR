@@ -1,14 +1,16 @@
 # prog1-CR
-Services Used
-AWS S3
-AWS EC2 Instance
-AWS SQS Messaging Service
-AWS Rekognition
 
 Architectural Diagram
 
 ![image](https://github.com/rudrabarot71/prog1-CR/assets/81606729/11290052-cf1c-40e8-a4d4-0e6e7ff462d2)
 
+
+
+Services Used
+AWS S3
+AWS EC2 Instance
+AWS SQS Messaging Service
+AWS Rekognition
 
 Steps Performed
 1. AWS Learner's Lab Setup
