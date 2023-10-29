@@ -31,6 +31,7 @@ Download the SSH key (labsuser.pem).
 Change permissions with chmod 400 labsuser.pem.
 Use ssh -i labsuser.pem ec2-user@<EC2_IP> to access the instances.
 Installing Oracle JDK 19.0.1 on AWS Linux AMI:
+
 i)Download Oracle JDK
 wget https://download.oracle.com/java/19/archive/jdk-19.0.1_linux-x64_bin.tar.gz
 
