@@ -51,7 +51,7 @@ execute these one by one
 Add the following lines to /etc/profile.d/oraclejdk.sh:
 export JAVA_HOME=/usr/local/jdk-19.0.1
 export PATH=$JAVA_HOME/bin:$PATH
-Save the file and exit the text editor (in Vim, you can save with :wq
+Save the file and exit the text editor (in Vi, you can save with :wq
 
 v) Reload shell configuration:
 To apply the environment variables, either logout and log back in or run:
