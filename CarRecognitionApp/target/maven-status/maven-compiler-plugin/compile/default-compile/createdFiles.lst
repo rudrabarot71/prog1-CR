@@ -1,0 +1,4 @@
+com\pa1\carrecognitionapp\service\sqs_service.class
+com\pa1\carrecognitionapp\service\RS.class
+com\pa1\carrecognitionapp\service\CR.class
+com\pa1\carrecognitionapp\service\s3service.class

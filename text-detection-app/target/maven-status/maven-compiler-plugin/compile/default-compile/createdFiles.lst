@@ -1,0 +1,5 @@
+com\pa1\textdetectionapp\textdetectionapp\service\S3Service.class
+com\pa1\textdetectionapp\textdetectionapp\service\FileWriteService.class
+com\pa1\textdetectionapp\textdetectionapp\service\TextDetectionService.class
+com\pa1\textdetectionapp\textdetectionapp\service\TextDetectionAppApplication.class
+com\pa1\textdetectionapp\textdetectionapp\service\SQSService.class
